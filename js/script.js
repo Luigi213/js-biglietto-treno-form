@@ -24,5 +24,4 @@ button.addEventListener('click',function(){
         }
     // 4- visualizza in forma umana 
     document.getElementById("ticket-js"). innerHTML = price_ticket + '€';
-    console.log(price_ticket)
 })
