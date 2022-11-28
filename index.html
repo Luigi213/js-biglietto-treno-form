@@ -9,19 +9,36 @@
     </head>
     <body>
         <div class="container bg-red">
-            <div class="row">
+            <div class="row flex">
                 <div class="col-top">
-                    <form id="">
-                        <input type="text" id="name" value="Jon Snow">
-                        <input type="text" id="km">
-                        <select name="age" id="age">
-                            <option value="underage">Minorenne</option>
-                            <option value="major">Maggiorenne</option>
-                            <option value="over-65">Over 65</option>
-                        </select>
-                        <button id="generate">Genera</button>
-                        <p id="price-ticket"></p>
-                    </form>                   
+                    <div class="title">
+                        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                    </div>
+                    <div class="container-ticket">
+                        <form class="flex">
+                            <div>
+                                <label for="name">Nome Cognome</label> 
+                                <input type="text" id="name" value="Jon Snow">
+                            </div>
+                            <div>
+                                <label for="km">Km da percorerre</label> 
+                                <input type="text" id="km" value="10">
+                            </div>
+                            <div>
+                                <label for="age">Fascia d'età</label> 
+                                <select name="age" id="age">
+                                    <option value="underage">Minorenne</option>
+                                    <option value="major">Maggiorenne</option>
+                                    <option value="over-65">Over 65</option>
+                                </select>
+                            </div>
+                            <div class="btn">
+                                <button id="generate">Genera</button>
+                                <button>Annulla</button>
+                                <p id="price-ticket"></p>
+                            </div>
+                        </form>                   
+                    </div>
                 </div>
                 <div class="col-bottom">
 
