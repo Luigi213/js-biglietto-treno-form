@@ -1,8 +1,8 @@
 let button = document.getElementById("genarate");
 button.addEventListener('click',function(){
     // 1,2- inserire i chilometri e l'eta
-    let kilometres = parseInt(prompt("Inserire i chilometri da percorere"));
-    let age = parseInt(prompt("Inserire l'età"));
+    let kilometres = parseInt("Inserire i chilometri da percorere");
+    let age = parseInt("Inserire l'età");
     // 3- calcolo del prezzo del biglietto con le dovute le regole:
         // 3.1 applicare il prezzo in base ai chilometri da percorrere (0.21 € al km)
         let price_ticket;
@@ -20,6 +20,6 @@ button.addEventListener('click',function(){
             price_ticket = (0.21 * kilometres).toFixed(2);
         }
     // 4- visualizza in forma umana 
-    document.getElementById("ticket"). innerHTML = price_ticket + '€';
+    document.getElementById("ticket-js"). innerHTML = price_ticket + '€';
     console.log(price_ticket)
 })
