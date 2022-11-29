@@ -3,6 +3,8 @@ button.addEventListener('click',function(){
     // 1,2- inserire i chilometri e l'eta
     let kilometres = document.getElementById("km").value;
     let age = document.getElementById("age").value;
+    let name = document.getElementById("name").value;
+
     // 3- calcolo del prezzo del biglietto con le dovute le regole:
         // 3.1 applicare il prezzo in base ai chilometri da percorrere (0.21 € al km)
         let price_ticket;
@@ -22,4 +24,5 @@ button.addEventListener('click',function(){
         }
     // 4- visualizza in forma umana 
     document.getElementById("ticket-js"). innerHTML = price_ticket + '€';
+    document.getElementById("name-ticket"). innerHTML = name
 })
